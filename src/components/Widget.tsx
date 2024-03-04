@@ -39,7 +39,7 @@ const contacts = [
 
 export default function Widget({}: Props) {
   return (
-    <div className="hidden lg:flex flex-col w-60 p-2 mt-5">
+    <div className="hidden md:flex flex-col w-60 p-2 mt-5">
       <div className="flex justify-center items-center text-gray-500 mb-5">
         <h2 className="text-xl">Contacts</h2>
         <div className="flex space-x-2">

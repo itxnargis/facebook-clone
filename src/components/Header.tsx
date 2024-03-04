@@ -15,7 +15,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
+    <div className="sticky top-0 z-50 bg-white flex items-center sm:justify-between p-2 lg:px-5 shadow-md">
       {/* left */}
       <div className="flex items-center">
         <div className="text-blue-500">
@@ -44,7 +44,9 @@ export default function Header({}: Props) {
       {/* right */}
       <div className="flex items-center sm:space-x-2 justify-end">
         {/* profile photo */}
-        <p className="whitespace-nowrap font-semibold pr-3 hidden sm:block">Nargis Khatun</p>
+        <p className="whitespace-nowrap font-semibold pr-3 hidden sm:block">
+          Nargis Khatun
+        </p>
         <HiViewGrid className="icon" />
         <IoChatbubbleEllipsesSharp className="icon" />
         <GoBellFill className="icon" />
