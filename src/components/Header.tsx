@@ -15,42 +15,42 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <div className="sticky top-0 z-50 bg-white flex items-center sm:justify-between p-2 lg:px-5 shadow-md">
-      {/* left */}
-      <div className="flex items-center">
-        <div className="text-blue-500">
-          <IoLogoFacebook className="text-5xl" />
-        </div>
-        <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
-          <IoSearch className="h-6 text-gray-600" />
-          <input
-            className="hidden md:inline-flex ml-2 items-center bg-transparent
+    <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
+      <div className="flex justify-between flex-col space-y-2 md:flex-row">
+        {/* left */}
+        <div className="flex items-center">
+          <div className="text-blue-500">
+            <IoLogoFacebook className="text-5xl" />
+          </div>
+          <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
+            <IoSearch className="h-6 text-gray-600" />
+            <input
+              className="inline-flex ml-2 items-center bg-transparent
             outline-none placeholder-gray-500 flex-shrink "
-            type="text"
-            placeholder="Search Facebook"
-          />
+              type="text"
+              placeholder="Search Facebook"
+            />
+          </div>
         </div>
-      </div>
-      {/* center */}
-      <div className="flex justify-center flex-grow">
-        <div className="flex space-x-6 text-xl md:space-x-2">
-          <HeaderIcon Icon={MdHome} active />
-          <HeaderIcon Icon={PiMonitorPlay} />
-          <HeaderIcon Icon={CiHome} />
-          <HeaderIcon Icon={FaUsersLine} />
-          <HeaderIcon Icon={PiMonitorPlay} />
+        {/* center */}
+        <div className="flex justify-center flex-grow">
+          <div className="flex space-x-6 text-xl md:space-x-2 ">
+            <HeaderIcon Icon={MdHome} active />
+            <HeaderIcon Icon={PiMonitorPlay} />
+            <HeaderIcon Icon={CiHome} />
+            <HeaderIcon Icon={FaUsersLine} />
+            <HeaderIcon Icon={PiMonitorPlay} />
+          </div>
         </div>
-      </div>
-      {/* right */}
-      <div className="flex items-center sm:space-x-2 justify-end">
-        {/* profile photo */}
-        <p className="whitespace-nowrap font-semibold pr-3 hidden sm:block">
-          Nargis Khatun
-        </p>
-        <HiViewGrid className="icon" />
-        <IoChatbubbleEllipsesSharp className="icon" />
-        <GoBellFill className="icon" />
-        <FaChevronDown className="icon" />
+        {/* right */}
+        <div className="hidden md:flex items-center sm:space-x-2 justify-end">
+          {/* profile photo */}
+          <p className="whitespace-nowrap font-semibold pr-3 ">Nargis Khatun</p>
+          <HiViewGrid className="icon" />
+          <IoChatbubbleEllipsesSharp className="icon" />
+          <GoBellFill className="icon" />
+          <FaChevronDown className="icon" />
+        </div>
       </div>
     </div>
   );
